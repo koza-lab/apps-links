@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Focus Buddy — get it on the App Store</title>
+<meta name="description" content="Focus Buddy: ADHD Timer — calmer mornings for ADHD brains with voice-guided routines, focus timers and gentle streaks. Download on the App Store.">
+<meta name="theme-color" content="#F4FAF5">
+<meta property="og:title" content="Focus Buddy — ADHD Timer">
+<meta property="og:description" content="Calmer mornings for ADHD brains — voice-guided routines, not alarms.">
+<meta name="apple-itunes-app" content="app-id=6792304013">
+<link rel="icon" href="data:image/webp;base64,UklGRsgCAABXRUJQVlA4ILwCAADwDgCdASpAAEAAPmUmjkWkIiEb/AUAQAZEtABi/iOG9jq+xDW7d/zAdAD/d+oB/T+oA3kD9z2IJ8LWhu4MOA6LdMnomeQpQyX3x1iPbmh4VJBrE7wlQ8KTzXgsRJGGnUmCMJJyN2lDtmePWzLNA5S0P3VvQcg0P/ADVsctvk1p8AD+/YLG0qGw5HRf6qBBYDo5LC4lBPD81eTE7jtbAblvdS4gqXRnw8fWfnFfOI63LfhkqX0Q8E4ccE00HcuRfJrT11uvbfSQ88uafHlhDwdoZaMWpS1PrVq81/Xu6Jp+Heyaonj44sLoYdrJQFktDTT9QE2S3EXfQrWzc5FrXzhhGjFwOMGElu681bmr0NfReIX6OX+ek9rmISu4SrboMFEOohfxXbQa/k0yq3SA6JP1NzaqiqEi//h4T6B5/pQHZE3RfdX07vL/+l9zsDx+uYz6zohSn2bjYJpqSwVt4X4Zyo9OlRskAxFY1P4D6P/ksgfeMj5aMZJ95+lz4Df73U4tT6A9wmrtc4c1RfY1dNzeEJBjSgovEiABca2UPb+Fvrn1XXm36tQRKfm4dSqqW5obvU6uoHF0iyDiczSCuBm33kyYIB4LizEWdy1ccHfjkhhUbbgSG3L6uAoO2QB6exwRfreX3dRm9skLWOv7HAN3Aj7W1yzOOs5ij5maPP9BktnKc+xUnozNYtSmqWp5k66ZWH91GK02hpfMUltKYtn2L/CRJ+Mxas76I7UvvBKpc0QL9YoavAb9NikOCRv6v9vOspS687v26ybtjqyuQrQ5TTai/H9uk0YT+v+fAZek+QuYbVy5fCM9lI/uduhqAtCimdbKeTGpMqUd5dCoB2gu2DTXjt2jk8WexfbltIHhx0jH9utHXW4VALtXF+X1AWFSDOmE2fTcMhub6KYzrpTwEGUCdDatH4Z6MAAA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{--ink:#F4FAF5;--paper:#12291D;--dim:#5E7A6B;--line:rgba(18,41,29,.13);--accent:#4FBF8F;--accent-text:#23805B}
+  html,body{margin:0;padding:0;height:100%}
+  body{background:var(--ink);color:var(--paper);
+    font-family:"Bricolage Grotesque","Helvetica Neue",Helvetica,sans-serif;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+    display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
+  a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+  a:hover{color:var(--accent-text)}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:10.5px;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+  .wrap{position:relative;width:100%;max-width:520px;margin:0 auto;flex:1;
+    display:flex;flex-direction:column;padding:0 22px 0 46px}
+  .rail{position:absolute;left:0;top:0;bottom:0;width:38px;pointer-events:none}
+  .rail .ticks{position:absolute;left:11px;top:0;bottom:0;width:6px;
+    background:repeating-linear-gradient(to bottom,var(--line) 0 1px,transparent 1px 26px)}
+  .rail svg{position:absolute;inset:0;width:100%;height:100%}
+  .thread{fill:none;stroke:url(#kz);stroke-width:1.5;vector-effect:non-scaling-stroke;
+    stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;
+    animation:draw 2.6s cubic-bezier(.4,0,.15,1) .15s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  header{display:flex;align-items:center;justify-content:space-between;padding:18px 0 0}
+  .mark{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.24em;
+    font-weight:500;text-transform:uppercase}
+  .mark span{color:var(--accent-text)}
+  main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 0}
+  .icon{width:96px;height:96px;border-radius:24px;display:block;
+    box-shadow:0 14px 34px rgba(18,41,29,.18)}
+  h1{font-size:clamp(38px,11vw,52px);line-height:.96;letter-spacing:-.035em;
+    font-weight:800;margin:26px 0 0}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--accent-text);margin-top:10px}
+  .say{margin:18px 0 0;font-size:17px;line-height:1.4;color:#3F5A4C;max-width:30ch;text-wrap:pretty}
+  .cta{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:30px;
+    min-height:54px;border-radius:100px;background:var(--accent);color:#0E2418;
+    font-size:17px;font-weight:600;letter-spacing:-.01em;
+    box-shadow:0 4px 0 #3DA477;
+    transition:transform .15s ease}
+  .cta:hover{color:#0E2418}
+  .cta:active{transform:scale(.97)}
+  .status{margin-top:14px;text-align:center}
+  /* in-app browser guidance */
+  .iab{display:none;margin-top:26px;border:1px solid var(--line);border-radius:18px;
+    padding:18px;background:#E7F6EE}
+  .iab.show{display:block;animation:pop .5s cubic-bezier(.2,.7,.2,1)}
+  @keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .iab .t{display:flex;align-items:center;gap:9px;font-weight:600;font-size:15.5px}
+  .iab .t .d{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;
+    animation:pulse 2.6s ease-out infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 #4FBF8F66}70%,100%{box-shadow:0 0 0 10px transparent}}
+  .iab ol{margin:12px 0 0;padding-left:20px;color:#3F5A4C;font-size:14.5px;line-height:1.55}
+  .iab li{margin-bottom:6px}
+  .iab b{color:var(--paper);font-weight:600}
+  .iab .why{margin-top:10px;font-size:12.5px;color:var(--dim)}
+  footer{padding:20px 0 26px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .fade{opacity:0;transform:translateY(12px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.27s}.d4{animation-delay:.4s}
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.001s!important;animation-delay:0s!important;transition:none!important}
+    .fade{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="rail" aria-hidden="true">
+    <div class="ticks"></div>
+    <svg viewBox="0 0 100 1000" preserveAspectRatio="none">
+      <defs><linearGradient id="kz" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#4FBF8F" stop-opacity=".15"/>
+        <stop offset="35%" stop-color="#4FBF8F"/>
+        <stop offset="100%" stop-color="#4FBF8F" stop-opacity=".1"/>
+      </linearGradient></defs>
+      <path class="thread" d="M50 0 C 12 130, 88 210, 50 330 C 12 450, 88 530, 50 650 C 12 770, 88 850, 50 1000"/>
+    </svg>
+  </div>
+
+  <header class="fade d1">
+    <a class="mark" href="/">KOZA<span>·</span>LAB</a>
+    <span class="mono">iOS · App Store</span>
+  </header>
+
+  <main>
+    <img class="icon fade d1" src="data:image/webp;base64,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" alt="Focus Buddy app icon" width="96" height="96">
+    <h1 class="fade d2">Focus Buddy</h1>
+    <div class="kicker fade d2">ADHD Timer</div>
+    <p class="say fade d3">Calmer mornings for ADHD brains — voice-guided routines, focus timers and gentle streaks, not alarms.</p>
+
+    <a class="cta fade d4" id="cta" href="https://apps.apple.com/app/focus-buddy-adhd-timer/id6792304013">Download on the App Store <span>→</span></a>
+    <div class="status mono fade d4" id="status"></div>
+
+    <div class="iab" id="iab">
+      <div class="t"><span class="d"></span>You're in Instagram's browser</div>
+      <ol>
+        <li>Tap <b>⋯</b> at the top right</li>
+        <li>Choose <b>Open in external browser</b></li>
+        <li>The App Store will open automatically</li>
+      </ol>
+      <div class="why">Instagram blocks direct App Store links — one tap fixes it.</div>
+    </div>
+  </main>
+
+  <footer class="fade d4">
+    <span class="mono">© 2026 Koza Lab PT PMA</span>
+    <span style="display:flex;gap:14px;flex-wrap:wrap"><a class="mono" href="/focusbuddy/privacy/">Privacy</a><a class="mono" href="/focusbuddy/support/">Support</a><a class="mono" href="/">All apps ↗</a></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var url="https://apps.apple.com/app/focus-buddy-adhd-timer/id6792304013";
+  var ua=navigator.userAgent||"";
+  var inApp=/Instagram|FBAN|FBAV|FB_IAB|FBIOS|Line\/|Twitter|TikTok|musical_ly|Snapchat/i.test(ua);
+  var status=document.getElementById('status');
+  if(inApp){
+    document.getElementById('iab').classList.add('show');
+  }else{
+    status.textContent="Taking you to the App Store…";
+    setTimeout(function(){window.location.href=url;},650);
+  }
+})();
+</script>
+</body>
+</html>
